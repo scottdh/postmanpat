@@ -1,0 +1,13 @@
+// Import Fontawesome
+@import "./fontawesome/scss/fontawesome.scss";
+@import "./fontawesome/scss/solid.scss";
+@import "./fontawesome/scss/brands.scss";
+
+@import "normalise.scss";
+@import "theme.scss";
+@import "elements.scss";
+@import "components.scss";
+
+.mainContainer {
+  padding: 2rem 4%;
+}
