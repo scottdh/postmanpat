@@ -2,14 +2,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Lora", serif;
-  font-size: 16px;
-  width: 100%;
-  background-color: $background;
-  color: $primaryText;
-}
-
 h1 {
   font-size: 2rem; // 32px
   line-height: 2.5rem; // 40px
@@ -73,6 +65,23 @@ h4 {
   @media (min-width: 1024px) {
     font-size: 1.5rem; // 18px
     line-height: 2rem; // 24px
+  }
+}
+h5 {
+  font-size: 0.7rem;
+  line-height: 1rem; // 16px
+  font-weight: $bold;
+  margin: 0;
+  margin-bottom: 1rem;
+  max-width: 64ch;
+  @media (min-width: 640px) {
+    font-size: 1rem; // 16px
+    line-height: 1.5rem; // 24px
+    font-weight: $semiBold;
+  }
+  @media (min-width: 1024px) {
+    font-size: 1rem; // 16px
+    line-height: 1.5rem; // 24px
   }
 }
 

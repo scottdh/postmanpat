@@ -4748,18 +4748,18 @@ template {
 [hidden] {
   display: none; }
 
-.secondaryText {
-  color: rgba(60, 60, 68, 0.6); }
-
-* {
-  box-sizing: border-box; }
-
 body {
   font-family: "Lora", serif;
   font-size: 16px;
   width: 100%;
   background-color: #f2f2f7;
   color: black; }
+
+.secondaryText {
+  color: rgba(60, 60, 68, 0.6); }
+
+* {
+  box-sizing: border-box; }
 
 h1 {
   font-size: 2rem;
@@ -4823,6 +4823,23 @@ h4 {
       font-size: 1.5rem;
       line-height: 2rem; } }
 
+h5 {
+  font-size: 0.7rem;
+  line-height: 1rem;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 1rem;
+  max-width: 64ch; }
+  @media (min-width: 640px) {
+    h5 {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      font-weight: 600; } }
+  @media (min-width: 1024px) {
+    h5 {
+      font-size: 1rem;
+      line-height: 1.5rem; } }
+
 p,
 input,
 button,
@@ -4871,12 +4888,12 @@ input[type="text"] {
   background-color: #d1d1d6; }
 
 button.--primary {
-  background-color: #3e9ce0;
+  background-color: black;
   color: white; }
 
 a:hover,
 button:hover {
-  background-color: #6ab3e7; }
+  background-color: #1a1a1a; }
 
 form {
   display: flex;
@@ -4922,6 +4939,7 @@ ol {
   flex-direction: column;
   min-height: 33vh;
   padding: 1.5rem 1rem 1.5rem 1rem;
+  margin-bottom: 2rem;
   background-color: white;
   align-items: center;
   justify-content: center;
@@ -4934,7 +4952,7 @@ ol {
     height: 7.5rem;
     width: 7.5rem;
     border-radius: 50%;
-    background-color: #d1d1d6;
+    background-color: #e6e6eb;
     font-size: 4rem;
     font-weight: 700;
     margin-bottom: 2rem;
@@ -4944,10 +4962,64 @@ ol {
       position: absolute;
       height: 8.5rem;
       width: 8.5rem;
-      border: 2px dashed #d1d1d6;
+      border: 2px dashed #e6e6eb;
       border-radius: 50%; }
   .postDetails p {
     color: rgba(60, 60, 68, 0.6); }
+
+.tableView__groupedSectionHeader {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  padding: 0 1rem 0 1rem;
+  margin-bottom: 0; }
+
+.tableView__row {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  min-height: 4rem;
+  box-shadow: inset 0 0 1px rgba(60, 60, 68, 0.3); }
+  .tableView__row__title {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    margin: 0;
+    letter-spacing: 0.16em;
+    text-transform: uppercase; }
+  .tableView__row__subtitle {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.3em; }
+  .tableView__row__left {
+    display: flex;
+    align-items: center;
+    min-width: 5rem;
+    padding-right: 1rem; }
+  .tableView__row__center {
+    flex-grow: 2; }
+  .tableView__row__right {
+    display: flex;
+    align-items: center; }
+  .tableView__row .envelopeIcon {
+    width: 100%;
+    height: 2rem;
+    background-color: #d1d1d6;
+    border-radius: 0.25rem; }
+
+.fab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 2%;
+  right: 4%;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  font-size: 2em; }
+  .fab .icon {
+    height: 100%;
+    width: 100%; }
 
 .mainContainer {
   padding: 2rem 4%; }
