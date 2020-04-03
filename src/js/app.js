@@ -1,3 +1,2 @@
-import { sayHi } from "./amazingFunction.js";
-sayHi("John"); // Hello, John!
+import "./inbox.js";
 console.log("app.js firing");
