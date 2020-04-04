@@ -83,7 +83,10 @@
     &__subtitle {
       margin: 0;
       font-weight: $bold;
-      font-size: 1.3em;
+      font-size: 1.2em;
+      &.--opened {
+        font-weight: $regular;
+      }
     }
 
     &__left {
@@ -102,9 +105,39 @@
 
     .envelopeIcon {
       width: 100%;
-      height: 2rem;
-      background-color: $grey4;
-      border-radius: 0.25rem;
+      display: flex;
+      flex-direction: row;
+      padding: 0;
+      align-items: center;
+      height: 2.5rem;
+
+      .envelope {
+        height: 100%;
+        margin: 0;
+        background-color: $grey4;
+        border-radius: 0.25rem;
+        width: 100%;
+      }
+      .letter {
+        margin: 0;
+        height: 90%;
+        background-color: white;
+        width: 20px;
+        border: 1px solid $grey3;
+        border-left: none;
+        width: 33%;
+        position: relative;
+
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          left: -8px;
+          width: 14px;
+          height: 100%;
+          background: white;
+        }
+      }
     }
   }
 }

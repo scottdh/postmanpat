@@ -20,8 +20,8 @@ function style() {
 function dev() {
   browserSync.init({
     server: {
-      baseDir: "./src"
-    }
+      baseDir: "./src",
+    },
   });
   gulp.watch("./scss/**/*.scss", style);
   gulp.watch("./src/**/*.html").on("change", browserSync.reload);
