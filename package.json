@@ -14,6 +14,6 @@
     "gulp-sass": "^4.0.2"
   },
   "dependencies": {
-    "reefjs": "^4.1.12"
+    "reefjs": "^4.1.13"
   }
 }
